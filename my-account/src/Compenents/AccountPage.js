@@ -1,14 +1,14 @@
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
+// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
+// import TextField from '@mui/material/TextField';
+// import FormControlLabel from '@mui/material/FormControlLabel';
+// import Checkbox from '@mui/material/Checkbox';
+// import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -37,10 +37,7 @@ export default function AccountPage() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h2" variant="h5" color={success.dark}>
+          <Typography component="h2" variant="h5">
             Patient
           </Typography>
           <Typography component="h1" variant="h5">
@@ -57,43 +54,68 @@ export default function AccountPage() {
                 </Button>                 
               </Grid>
               <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
-                  autoComplete="family-name"
-                />
+                <Button
+                variant='outlined'
+                color='success'
+                fullWidth>
+                    Personal Information
+                </Button>
               </Grid>
               <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="email"
-                  label="Email Address"
-                  name="email"
-                  autoComplete="email"
-                />
+                <Button
+                variant='outlined'
+                color='success'
+                fullWidth>
+                    Settings
+                </Button>
               </Grid>
               <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  autoComplete="new-password"
-                />
-              </Grid>              
+                <Button
+                variant='outlined'
+                color='success'
+                fullWidth>
+                    Privacy
+                </Button>
+              </Grid>
+              <Grid item xs={12}>
+                <Button
+                variant='outlined'
+                color='success'
+                fullWidth>
+                    Medical History
+                </Button>
+              </Grid>
+              <Grid item xs={12}>
+                <Button
+                variant='outlined'
+                color='success'
+                fullWidth>
+                    Help
+                </Button>
+              </Grid>
+              <Grid item xs={12}>
+                <Button
+                variant='outlined'
+                color='success'
+                fullWidth>
+                    About
+                </Button>
+              </Grid>
+              <Grid item xs={12}>
+                <Button
+                variant='contained'
+                color='error'
+                fullWidth>
+                    Log Out
+                </Button>
+              </Grid>
             </Grid>
             <Button
-              Link href="https://www.youtube.com/watch?v=Y759bKVzJME"
+              href="#"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              color="success"
+              color="warning"
             >
               Back to Home
             </Button>
