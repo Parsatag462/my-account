@@ -23,7 +23,7 @@ const theme = createTheme({
     },
     secondary: {
       light: '#ff7961',
-      main: '#f44336',
+      main: '#fafafa',
       dark: '#ba000d',
       contrastText: '#000',
     },
@@ -44,80 +44,88 @@ export default function AccountPage() {
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
-        <Box
+        {/* <Box
           sx={{
             marginTop: 8,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
           }}
-        >
-          <Typography component="h2" variant="h5">
+        > */}
+          <Typography component="h2" variant="h4" color={'primary'}>
             Patient
           </Typography>
-          <Typography component="h1" variant="h5">
+          <Typography component="h1" variant="h3" color={'secondary'}>
             My Account
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <Button
+                href="#"
                 variant='outlined'
-                color='success'
+                color='secondary'
                 fullWidth>
                     Health
                 </Button>                 
               </Grid>
               <Grid item xs={12}>
                 <Button
+                href="#"
                 variant='outlined'
-                color='success'
+                color='secondary'
                 fullWidth>
                     Personal Information
                 </Button>
               </Grid>
               <Grid item xs={12}>
                 <Button
+                href="#"
                 variant='outlined'
-                color='success'
+                color='secondary'
                 fullWidth>
                     Settings
                 </Button>
               </Grid>
               <Grid item xs={12}>
                 <Button
+                href="#"
                 variant='outlined'
-                color='success'
+                color='secondary'
                 fullWidth>
                     Privacy
                 </Button>
               </Grid>
               <Grid item xs={12}>
                 <Button
+                href="#"
                 variant='outlined'
-                color='success'
+                color='secondary'
                 fullWidth>
                     Medical History
                 </Button>
               </Grid>
               <Grid item xs={12}>
                 <Button
+                href="#"
                 variant='outlined'
-                color='success'
+                color='secondary'
                 fullWidth>
                     Help
                 </Button>
               </Grid>
               <Grid item xs={12}>
                 <Button
+                href="#"
                 variant='outlined'
-                color='success'
+                color='secondary'
                 fullWidth>
                     About
                 </Button>
               </Grid>
               <Grid item xs={12}>
                 <Button
+                href="#"
                 variant='contained'
                 color='error'
                 fullWidth>
@@ -139,7 +147,7 @@ export default function AccountPage() {
                 </Grid>
             </Grid>
           </Box>
-        </Box>        
+        {/* </Box>         */}
       </Container>
     </ThemeProvider>
   );
