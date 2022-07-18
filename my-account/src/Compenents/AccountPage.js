@@ -45,7 +45,7 @@ export default function AccountPage() {
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <Button
                 variant='outlined'
                 color='success'
@@ -53,7 +53,7 @@ export default function AccountPage() {
                     Health
                 </Button>                 
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <Button
                 variant='outlined'
                 color='success'
