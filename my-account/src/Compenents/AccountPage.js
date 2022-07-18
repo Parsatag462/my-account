@@ -13,7 +13,22 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    primary: {
+      light: '#757ce8',
+      main: '#009688',
+      dark: '#002884',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#ff7961',
+      main: '#f44336',
+      dark: '#ba000d',
+      contrastText: '#000',
+    },
+  },
+});
 
 export default function AccountPage() {
   const handleSubmit = (event) => {
@@ -115,7 +130,7 @@ export default function AccountPage() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              color="warning"
+              color="primary"
             >
               Back to Home
             </Button>
